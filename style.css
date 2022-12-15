@@ -1,0 +1,69 @@
+/* CREACIÓN DE NUESTRAS FUENTES USANDO RECURSOS EXTERNOS */
+@font-face {
+    font-family: Exo2-Bold;
+    src: url(fonts/exo2/Exo2-Bold.ttf);
+}
+
+@font-face {
+    font-family: Exo2-Light;
+    src: url(fonts/exo2/Exo2-Light.ttf);
+}
+
+*{
+    padding: 0%;
+    top: 0%;
+    margin: 0%;
+}
+/* COLORES DE LA WEB */
+:root{
+    --color-A: #391306;
+    --color-1: #A9003F;
+    --color-2: #C50053;
+    --color-3: #E20069;
+
+    --text-color: aliceblue
+}
+/* ESTILOS DEL CONTENEDOR PRINCIPAL USANDO GRID */
+.container{
+    background-color: var(--color-1);
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,100px);
+    justify-items: center;
+    
+    
+}
+header{
+    background-color: none;
+    text-align: center;
+    font-family: Exo2-Bold;
+}
+article{
+    background-color: none;
+    font-family: Exo2-Light;
+}
+.btn-section{
+    background-color: none;
+}
+#btn{
+    background-color: none;
+    font-family: Exo2-Light;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 4px 4px  var(--color-3);
+}
+#btn:hover{
+    font-family: Exo2-Bold;
+    color: var(--text-color);
+    background-color: var(--color-A);
+    box-shadow: 5px 5px var(--color-B);
+    border-style: none;
+    cursor: grab;
+}
+
+
+
